@@ -2,21 +2,21 @@ package whovianPoetry;
 
 public class Doctor {
 
-	String nine(){
+	void nine(){
 
-		return "Fantastic";
+		System.out.println("Fantastic");
 	}
-	String ten(){
+	void ten(){
 
-		return "Allonsy";
+		System.out.println("Allonsy");
 	}
-	String eleven(){
+	void eleven(){
 
-		return "Geronimo";
+		System.out.println("Geronimo");
 	}
-	String twelve(){
+	void twelve(){
 
-		return "Listen";
+		System.out.println("shut up");
 	}
 
 }

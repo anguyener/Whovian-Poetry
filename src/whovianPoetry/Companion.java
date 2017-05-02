@@ -2,33 +2,33 @@ package whovianPoetry;
 
 public class Companion {
 	
-	String badWolf(){
+	void badWolf(){
 
-		return "BAD WOLF";
+		System.out.println("BAD WOLF");
 	}
-	String earthWalker(){
+	void earthWalker(){
 
-		return "Martha Jones";
+		System.out.println("Martha Jones");
 	}
-	String mostImportantHuman(){
+	void mostImportantHuman(){
 
-		return "DoctorDona<3";
+		System.out.println("DoctorDona<3");
 	}
-	String girlWhoWaited(){
+	void girlWhoWaited(){
 
-		return "come along Pond";
+		System.out.println("come along Pond");
 	}
-	String lastCenturion(){
+	void lastCenturion(){
 
-		return "um... cool";
+		System.out.println("um... cool");
 	}
-	String souffleGirl(){
+	void souffleGirl(){
 
-		return "Oswin";
+		System.out.println("Oswin");
 	}
-	String melody(){
+	void melody(){
 
-		return "Hello, Sweetie";
+		System.out.println("Hello, Sweetie");
 	}
 
 }

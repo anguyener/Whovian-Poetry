@@ -2,25 +2,25 @@ package whovianPoetry;
 
 public class Villain {
 	
-	String daleks(){
+	void daleks(){
 
-		return "EXTERMINATE";
+		System.out.println("EXTERMINATE");
 	}
-	String cybermen(){
+	void cybermen(){
 
-		return "Upgraded";
+		System.out.println("Upgraded");
 	}
-	String master(){
+	void master(){
 
-		return "1 2 3 4";
+		System.out.println("1 2 3 4");
 	}
-	String angels(){
+	void angels(){
 
-		return "DONTBLINK";
+		System.out.println("DONTBLINK");
 	}
-	String silence(){
+	void silence(){
 
-		return "silence will fall";
+		System.out.println("silence will fall");
 	}
 
 }
