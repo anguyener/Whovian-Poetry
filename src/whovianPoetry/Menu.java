@@ -11,7 +11,6 @@ public class Menu {
 		System.out.println("1. The Doctor");
 		System.out.println("2. A Companion");
 		System.out.println("3. Villain");
-		System.out.println("4. Other");
 		String choiceOne = scan.nextLine();
 
 		switch(choiceOne){

@@ -3,37 +3,13 @@ package whovianPoetry;
 import java.util.Arrays;
 
 class Word{
-	/** 
-	 * The actual word
-	 */
+	
 	String word;
-
-	/**
-	 * Array of phonemes from cmupron.txt file
-	 */
 	String[] phonemes;
-
-	/**
-	 * Array of ints.
-	 * 1 = primary stress
-	 * 2 = secondary stress
-	 * 0 = no stress
-	 */
 	int[] meter;
-
-	/**
-	 * Strings semantically related to this word
-	 */
 	String[] meaning;
-
-	/**
-	 * From the POS file
-	 */
 	String partOfSpeech;
-	/**************************
-	 * Constructors
-	 **************************/
-
+	
 	/**
 	 * Constructor with a parameter for every field
 	 */
@@ -54,8 +30,6 @@ class Word{
 		this(w, null, null, null, "");
 	}
 
-	// Generic constructor, fills in no values
-	// The first line of a constructor can call another constructor
 	public Word(){
 		this("");
 	}
@@ -85,7 +59,7 @@ class Word{
 			return false;
 		for(int i = 0; i < Lphones; i++){
 			if(phonemes[Lphonemes-Lphones + i].compareTo(phones[i]) != 0)
-				return false; // Rhyme conflict.
+				return false;
 		}
 		// If we make it here, there were no rhyme conflicts
 		return true;

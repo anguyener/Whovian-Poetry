@@ -31,7 +31,8 @@ public class Tardis {
 		}
 		return "Nono";
 	}
-	
+	//UMMMM currently isPOS just returns true...
+	//might want to fix that
 	static String getPOSword(String pos){
 		for(String w : wordMap.keySet()){
 			if(wordMap.get(w).isPOS(pos))
@@ -188,9 +189,10 @@ public class Tardis {
 		readPOSFile();
 
 	}
-	//FIX THIS
+	//fixed????
 	static int[] getMeter(String cmuline){
-		return new int[] {1, 0}; 
+		return wordMap.get(cmuline).meter;
+		//return new int[] {1, 0}; 
 	}
 	//HERE IS THE ANNOYING %'s IT MUST BE EXTERMINATED
 	static void readPOSFile(){
