@@ -68,7 +68,7 @@ public class Tardis {
 		return line;
 
 	}
-	
+	//inputs words outputs phonemes
 	static String getTargetPhonemes(String target){
 		String[] words = target.split(" ");
 		int last = numSyllables(words[words.length - 1]);
@@ -236,6 +236,13 @@ public class Tardis {
 
 		// If we make it to here, then the word is not in our word list
 		return null;
+	}
+	
+	/*
+	 * Getter method for the private vocab field
+	 */
+	public static String getVocab() {
+		return vocab;
 	}
 	
 }
