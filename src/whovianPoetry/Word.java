@@ -92,6 +92,11 @@ class Word{
 		return true;
 	}
 
+	boolean matchStartOfMeter(String poemMeter){
+		String m = poemMeter.substring(0, meter.length);
+		
+		return initialMeterMatch(m);
+	}
 
 	/** 
 	 * Returns true if this word can be the part of speech
@@ -108,5 +113,9 @@ class Word{
 	 */
 	int numSyllables(){
 		return meter.length;
+	}
+	
+	int numPhonemes(){
+		return phonemes.length;
 	}
 }
