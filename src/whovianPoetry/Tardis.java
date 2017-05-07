@@ -88,7 +88,7 @@ public class Tardis {
 			if(wordList[index].initialMeterMatch(meter))
 				return wordList[index].word;
 		}
-		return "llama";
+		return "RUN";
 	}
 	
 	static int numSyllables(String w){
@@ -100,7 +100,7 @@ public class Tardis {
 		// Open up the cmupron.txt file for reading
 		try{
 			FileReader g = null;
-			g = new FileReader("SourceTexts/cmupron.txt");
+			g = new FileReader("whovianPron.txt");
 			BufferedReader rhymingReader = new BufferedReader(g);
 			String line = null;
 
@@ -197,7 +197,7 @@ public class Tardis {
 	//HERE IS THE ANNOYING %'s IT MUST BE EXTERMINATED
 	static void readPOSFile(){
 		try { 
-			FileReader f = new FileReader("SourceTexts/mpos.txt");
+			FileReader f = new FileReader("whovianPos.txt");
 			BufferedReader reader = new BufferedReader(f);
 			String line = null;
 			int linesRead = 0;
